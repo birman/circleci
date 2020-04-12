@@ -8,4 +8,9 @@ class MyFirstTest extends TestCase
     {
         $this->assertEquals("hello world", "hello world");
     }
+
+    public function testBoolean()
+    {
+        $this->assertFalse('1' === 1);
+    }
 }
