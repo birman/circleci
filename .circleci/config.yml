@@ -32,3 +32,6 @@ jobs:
       - run: 
           name: mv composer.phar /usr/local/bin/composer
           command: mv composer.phar /usr/local/bin/composer
+      - run:
+          name: Run Unit tests
+          command: vendor/bin/phpunit
