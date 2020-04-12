@@ -26,3 +26,6 @@ jobs:
           command: |
             php -v
             php composer.phar --version   
+      - run:
+          name: Run Unit tests
+          command: vendor/bin/phpunit
