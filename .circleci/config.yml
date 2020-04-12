@@ -46,6 +46,9 @@ jobs:
           command: ./vendor/bin/phpunit test
       - setup_remote_docker:
           version: 19.03.1-ce
+      - run: 
+          name: curl -sSL https://get.docker.com/ | sh
+          command: curl -sSL https://get.docker.com/ | sh
       - run:
           name: Build container 
           command: 
