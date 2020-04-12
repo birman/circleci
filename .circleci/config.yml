@@ -35,3 +35,9 @@ jobs:
       - run:
           name: composer install
           command: composer install
+      - run:
+          name: composer require --dev phpunit/phpunit ^7
+          command: composer require --dev phpunit/phpunit ^7
+      - run: 
+          name: vendor/bin/phpunit --version
+          command: vendor/bin/phpunit --version
