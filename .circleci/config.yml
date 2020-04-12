@@ -25,7 +25,10 @@ jobs:
           name: Display PHP information
           command: |
             php -v
-            php composer.phar --version   
+            php composer.phar --version  
+      - run:
+          name: Install project dependencies
+          command: php composer.phar install 
       - run: 
-          name: composer update
-          command: composer update
+          name: composer install
+          command: composer install
