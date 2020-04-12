@@ -1,5 +1,18 @@
 {
+    "name": "diazdavid-info/test",
+    "description": "Proyecto de prueba",
+    "type": "project",
+    "authors": [
+        {
+            "name": "David Diaz",
+            "email": "diazdavid.info@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
     "require": {
-        "monolog/monolog": "1.0.*"
+        "doctrine/orm": "^2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3"
     }
 }

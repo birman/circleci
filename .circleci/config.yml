@@ -28,4 +28,4 @@ jobs:
             php composer.phar --version   
       - run: 
           name: composer update
-          command: php composer update
+          command: composer update
