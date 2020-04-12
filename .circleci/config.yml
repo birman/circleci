@@ -30,5 +30,5 @@ jobs:
             name: Install project dependencies
             command: php composer.phar install
       - run:
-            name: Run Unit tests
-            command: vendor/bin/phpunit
+            name: Validate version off vendor
+            command: ./vendor/bin/phpunit --version
