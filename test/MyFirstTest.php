@@ -1,3 +1,5 @@
+<?php 
+
 use PHPUnit\Framework\TestCase;
 
 class MyFirstTest extends TestCase
