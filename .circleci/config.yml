@@ -26,6 +26,10 @@ jobs:
           command: |
             php -v
             php composer.phar --version   
-      - run:
-          name: Run Unit tests
-          command: vendor/bin/phpunit
+      -run:
+          name: Install composer
+          command: |
+            composer require --dev phpunit/phpunit
+      # - run:
+      #     name: Run Unit tests
+      #     command: vendor/bin/phpunit
