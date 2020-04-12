@@ -30,5 +30,10 @@ jobs:
             name: Install project dependencies
             command: php composer.phar install
       - run:
+            name: sudo apt-get install wget
+            command: sudo apt-get install wget
+      - run:
             name: Add phpunit
             command: wget -O phpunit https://phar.phpunit.de/phpunit-7.phar
+
+            
