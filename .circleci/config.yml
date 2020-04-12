@@ -46,7 +46,7 @@ jobs:
           command: ./vendor/bin/phpunit test
       - setup_remote_docker:
           version: 17.05.0-ce
-      -run:
+      - run:
           name: Build container 
           command: docker build -t "1" .
       
