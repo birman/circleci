@@ -48,5 +48,7 @@ jobs:
           version: 17.05.0-ce
       - run:
           name: Build container 
-          command: docker build -t "1" .
+          command: |
+            docker run -it busybox /bin/sh  
+            docker build -t "1" .
       
