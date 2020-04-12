@@ -31,6 +31,6 @@ jobs:
             command: php composer.phar install
       - run:
             name: /var/www/html/phpunit --version
-            command: /var/www/html/phpunit --version
+            command: ./var/www/html/phpunit --version
 
             
