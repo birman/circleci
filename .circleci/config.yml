@@ -30,7 +30,7 @@ jobs:
             name: Install project dependencies
             command: php composer.phar install
       - run:
-            name: composer require --dev phpunit/phpunit ^7
-            command: php composer require --dev phpunit/phpunit ^7
+            name: vendor/bin/phpunit --version
+            command: vendor/bin/phpunit --version
 
             
